@@ -144,13 +144,13 @@
       
         <div class="form-group">
           <label for="email">Username</label>
-          <input required="" name="email" id="email" type="text">
+          <input required="" name="username" id="email" type="text">
         </div>
         <div class="form-group">
           <label for="textarea">Password</label>
-          <textarea required="" cols="50" rows="10" id="textarea" name="textarea">          </textarea>
+          <input type="password" name="password" required="" cols="50" rows="10" id="textarea" name="textarea">          </textarea>
         </div>
-        <button type="submit" class="form-submit-btn">Submit</button>
+        <button type="submit" name="submit" class="form-submit-btn">Submit</button>
         <span>Not registered? </span> <a href="signup.php">Sign Up</a>
       
     </div>
