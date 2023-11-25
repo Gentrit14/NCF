@@ -15,7 +15,7 @@ if(isset($_POST['submit'])) {
         echo "You need to fill all fields";
     }
     else {
-        $sql = "INSERT INTO users(name, surname, username, email, password, ) VALUES (:name,:surname, :username, :email, :password)";
+        $sql = "INSERT INTO users(name, surname, username, email, password ) VALUES (:name,:surname, :username, :email, :password)";
         $insertSql = $conn->prepare($sql);
         
         $insertSql->bindParam(':name',$name);
